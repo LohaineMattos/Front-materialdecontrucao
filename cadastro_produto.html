@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="styleproduto.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Novo Produto</h1>
+    </header>
+    <div class="container">
+        <form id="produto-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br><br>
+            
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required><br><br>
+            
+            <label for="preco_compra">Preço de Compra:</label>
+            <input type="number" step="0.01" id="preco_compra" required><br><br>
+            
+            <label for="preco_venda">Preço de Venda:</label>
+            <input type="number" step="0.01" id="preco_venda" required><br><br>
+            
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" required><br><br>
+            
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" id="fornecedor" required><br><br>
+            
+            <label for="imagem">Imagem (URL):</label>
+            <input type="url" id="imagem"><br><br>
+            
+            <button type="submit">Cadastrar</button>
+            <button type="button" onclick="navigateTo('index.html')">Voltar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Materiais de Construção</p>
+    </footer>
+    <script src="scriptcadastroproduto.js"></script>
+</body>
+</html>
